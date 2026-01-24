@@ -1,0 +1,50 @@
+
+
+請閱讀PEICD100\AGENTS.md
+
+ENV_NAME：`ntnu_course_query_cpp_cpp`
+EXE_NAME：`師大課程查詢系統`
+
+我的app_main.py是專案入口，我希望你看過所有的程式碼之後，嘗試優化、整理代碼、提升執行速度。
+
+
+
+
+## GitHub 操作指令
+
+### 初始化
+
+```
+(
+echo.
+echo # ignore build outputs
+echo _build/
+echo out/
+)>> .gitignore
+git init
+git branch -M main
+git remote add origin https://github.com/peicd100/ntnu_course_query_cpp_cpp.git
+git add .
+git commit -m "PEICD100"
+git push -u origin main
+```
+
+### 例行上傳
+
+```
+git add .
+git commit -m "PEICD100"
+git push -u origin main
+```
+
+### 還原成 GitHub 最新資料
+
+```
+git rebase --abort || echo "No rebase in progress" && git fetch origin && git switch main && git reset --hard origin/main && git clean -fd && git status
+```
+
+### 查看儲存庫
+
+```
+git remote -v
+```

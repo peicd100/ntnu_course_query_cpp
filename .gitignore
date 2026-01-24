@@ -1,0 +1,9 @@
+dist/
+build/
+__pycache__/
+*.pyc
+
+
+# ignore build outputs
+dist/
+build/
